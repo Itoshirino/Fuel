@@ -1,0 +1,159 @@
+.disel {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+
+  &__left,
+  &__right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  &__left {
+    background-image: url("../Img/oil.png");
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  &__right {
+    background-image: url("../Img/float.png");
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .left__box,
+  .right__box {
+    width: 530px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(44, 44, 44, 0.8);
+    backdrop-filter: blur(2.5px);
+    border-radius: 30px;
+  }
+
+  .left__info,
+  .right__info {
+    width: 360px;
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .left__title,
+  .right__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #ffffff;
+  }
+
+  .left__subtitle,
+  .right__subtitle {
+    width: 100%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #cecece;
+  }
+
+  .left__button,
+  .right__button {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #ffd000;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.3);
+      border: 2px solid #ff9900;
+      transition: all 0.3s ease;
+    }
+
+    &:hover .left__button__text,
+    &:hover .right__button__text {
+      transform: scale(1.3);
+      color: #ff9900;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .left__button__text,
+  .right__button__text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  @media only screen and (max-width: 500px) {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    height: auto;
+
+    &__left,
+    &__right {
+      width: 100%;
+      height: 50%;
+      align-items: center;
+      justify-content: center;
+      background-attachment: scroll;
+    }
+
+    .left__box,
+    .right__box {
+      width: 300px;
+      height: 239px;
+    }
+
+    .left__info,
+    .right__info {
+      width: 236px;
+      height: 179px;
+      justify-content: space-around;
+    }
+
+    .left__title,
+    .right__title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    .left__subtitle,
+    .right__subtitle {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .left__button,
+    .right__button {
+      height: 40px;
+    }
+
+    .left__button__text,
+    .right__button__text {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
