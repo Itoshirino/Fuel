@@ -1,0 +1,154 @@
+.contacts {
+  width: 100% !important ;
+  background: url("../Img/heavy__car.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+
+  &__container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 80px 20px;
+  }
+
+  &__title {
+    font-family: "Rubik" !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 36px !important;
+    line-height: 43px !important;
+
+    color: #ffffff !important;
+    margin-bottom: 30px !important;
+
+    span {
+      color: #f8b400;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    width: 90% !important;
+  }
+
+  &__input {
+    flex: 1;
+    max-width: 250px;
+    font-family: "Inter" !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    color: #ffffff !important;
+    padding: 12px 15px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    font-size: 16px;
+    width: 400px;
+    height: 44px;
+    background: rgba(30, 30, 30, 0.7);
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+
+    &:focus {
+      box-shadow: 0 0 0 2px #dba833;
+    }
+  }
+
+  &__button {
+    width: 370px;
+    height: 44px;
+    background: #ffffff;
+    border: 2px solid #dba833;
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    color: #dba833;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
+  }
+
+  &__policy {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    justify-content: center;
+    display: flex;
+    margin-left: 270px;
+    color: #ffffff;
+
+    a {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+
+      color: #ffffff;
+      text-decoration: underline;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #dba833;
+      }
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    &__container {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__form {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+      max-width: 400px;
+      margin: 0 auto 20px;
+    }
+
+    &__input {
+      max-width: 100%;
+    }
+
+    &__button {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    &__policy{
+      margin: auto;
+    }
+    &__title {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    &__policy {
+      font-size: 12px;
+    }
+  }
+}

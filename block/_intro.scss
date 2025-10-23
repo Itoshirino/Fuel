@@ -21,8 +21,13 @@
 
   &__wrapper {
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -51,9 +56,10 @@
 
   &__box {
     z-index: 3;
-    position: absolute;
-    bottom: 10px;
-    margin-bottom: 90px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__btn {
@@ -112,9 +118,23 @@
     padding: 40px 20px;
     margin-top: 20px;
 
+    &__card {
+      margin-top: 50px;
+    }
+
     &__title {
       font-size: 38px;
       line-height: 95%;
+      margin-top: 200px;
+      margin-right: 150px;
+
+      span {
+        margin-right: 100px;
+      }
+    }
+
+    &__subtitle {
+      margin-right: 300px;
     }
     &__bg {
       width: 400px;
@@ -124,12 +144,34 @@
   @media only screen and (max-width: 500px) {
     padding: 30px 10px;
     margin-top: 20px;
+    &__card {
+      right: 320px;
+      position: relative;
+      margin-top: 50px;
+    }
+
     &__title {
-      font-size: 32px;
-      line-height: 90%;
+      font-size: 20px;
+      margin-right: 10px;
+
+      span {
+        font-size: 30px;
+        margin-right: 10px;
+      }
+    }
+    &__subtitle {
+      font-size: 20px;
+      margin: 20px;
     }
     &__bg {
-      width: 400px;
+      display: none;
+    }
+
+    &__btn {
+      right: 340px;
+      margin-bottom: 50px;
+      margin-left: 20px;
+      position: relative;
     }
   }
 }

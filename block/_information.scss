@@ -20,7 +20,7 @@
     span {
       font-family: "Rubik";
       font-weight: 700;
-      color: #ffc700;
+      color: #dba833;
     }
   }
 
@@ -73,34 +73,47 @@
     margin-bottom: 10px;
 
     span {
-      color: #ffb800;
+      color: #dba833;
     }
   }
 
   &__card__text {
     font-family: "Inter";
-    font-size: 14px;
+    font-style: normal;
     font-weight: 400;
-    color: #444;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #5b5b5b;
   }
 
   &__main__btn {
     margin-top: 40px;
-    background-color: #fff;
-    color: #ffb800;
-    border: 2px solid #ffb800;
-    padding: 12px 36px;
-    border-radius: 10px;
+    margin-left: 280px;
+    width: 50%;
+    background-color: #ffffff;
+    color: #dba833;
+    border: 2px solid #dba833;
+    padding: 14px 40px;
+    border-radius: 12px;
     font-family: "Rubik";
     font-weight: 700;
     font-size: 16px;
-    transition: all 0.3s ease;
-    margin-left: 250px;
-    width: 50%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 
     &:hover {
       background-color: #ffb800;
-      color: #000;
+      color: #000000;
+      box-shadow: 0 6px 16px rgba(255, 184, 0, 0.4);
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(3px);
+      box-shadow: 0 3px 8px rgba(255, 184, 0, 0.2);
     }
   }
 }
@@ -144,7 +157,7 @@
       font-size: 14px;
       padding: 10px 28px;
       margin-top: 30px;
-      margin-left: 30px;
+      margin-left: 80px;
     }
   }
 }

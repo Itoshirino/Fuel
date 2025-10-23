@@ -1,0 +1,24 @@
+.map__wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.map1 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .map__wrapper {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .map__wrapper {
+    padding: 0 10px;
+  }
+
+  .map1 {
+    height: 300px;
+  }
+}
