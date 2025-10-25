@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuel</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
 
@@ -83,101 +83,80 @@
     </header>
 
     <section class="intro">
+        <div class="intro__arrow intro__arrow__left">
+            <img src="./Img/arrow.png" alt="" class="intro__line">
+        </div>
+
         <div class="intro__wrapper">
-            <div class="intro__card">
-                <img src="./Img/shadow.png" alt="" class="intro__bg">
-                <p class="intro__title"><span>Поставка нефтепродуктов </span> <br> в Москве и Московской области</p>
-                <p class="intro__subtitle">
-                    От 1000 литров и от 46 рублей за литр
-                </p>
-                <br>
-            </div>
-            <div class="intro__box">
-                <button class="intro__btn">
-                    Заказать звонок
-                </button>
+            <h1 class="intro__title">
+                <span>Поставка</span> дизельного топлива <span>Евро 5</span> в Москве<br />
+                и Московской области
+            </h1>
+
+            <div class="intro__cards">
+                <div class="intro__card">Оптовые цены</div>
+                <div class="intro__card">Высокое качество топлива</div>
+                <div class="intro__card">Быстрая доставка</div>
             </div>
 
+            <p class="intro__subtitle">От 1000 литров и от 46 рублей за литр</p>
+
+            <button class="intro__btn">Заказать звонок</button>
+        </div>
+
+        <div class="intro__arrow intro__arrow__right">
+            <img src="./Img/arrow.png" alt="" class="intro__line">
         </div>
     </section>
 
+
+
     <main>
-        <section class="disel">
-            <div class="disel__left">
-                <div class="left__box">
-                    <div class="left__info">
-                        <p class="left__title">Дизельное топливо</p>
-                        <p class="left__subtitle">
-                            Мы являемся надежным поставщиком дизельного топлива в Москве и Московской области.
+        <section class="fuel__wrapper">
+            <div class="fuel">
+                <div class="fuel__card">
+                    <img src="./Img/summer.png" class="fuel__img" />
+                    <div class="fuel__content">
+                        <h3 class="fuel__title">Летнее дизельное топливо (Сорт C)</h3>
+                        <p class="fuel__subtitle">
+                            Летнее дизтопливо получают в результате перегонки сырой нефти, путём смешивания
+                            гидроочищенных прямогонных и вторичных углеводородных фракций с температурой выкипания от 40
+                            до 250 град С.
                         </p>
-                        <div class="left__button">
-                            <p class="left__button__text">Подробнее</p>
-                        </div>
+                        <button class="fuel__btn">Заказать</button>
                     </div>
                 </div>
-            </div>
 
-            <div class="disel__right">
-                <div class="right__box">
-                    <div class="right__info">
-                        <p class="right__title">Судовое топливо</p>
-                        <p class="right__subtitle">
-                            Мы предоставляем судовое дизельное топливо как для физических лиц, так и компаниям
+                <div class="fuel__card">
+                    <img src="./Img/mid.png" class="fuel__img" />
+                    <div class="fuel__content">
+                        <h3 class="fuel__title">Межсезонное дизельное топливо (Сорт E)</h3>
+                        <p class="fuel__subtitle">
+                            Предназначено для работы двигателей при температуре окружающей среды до -15 °С. Обеспечивает
+                            быстрый запуск двигателя и его стабильную работу, подходит для сельскохозяйственной и
+                            грузовой техники.
                         </p>
-                        <div class="right__button">
-                            <p class="right__button__text">Подробнее</p>
-                        </div>
+                        <button class="fuel__btn">Заказать</button>
+                    </div>
+                </div>
+
+                <div class="fuel__card">
+                    <img src="./Img/winter.png" class="fuel__img" />
+                    <div class="fuel__content">
+                        <h3 class="fuel__title">Зимнее дизельное топливо (Сорт F)</h3>
+                        <p class="fuel__subtitle">
+                            Это особая марка дизельного топлива, которое обладает морозоустойчивыми свойствами. Именно
+                            такое топливо необходимо для корректной и безопасной работы двигателей при минусовых
+                            температурах.
+                        </p>
+                        <button class="fuel__btn">Заказать</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="oil">
-            <div class="oil__box">
-                <div class="oil__info">
-                    <p class="oil__title">Печное топливо</p>
-                    <p class="oil__subtext">
-                        Печное топливо может служить для отопления коммерческой недвижимости и частных домов,
-                        строительных площадок, в качестве топлива для небольших котельных и сельхоз организаций.
-                    </p>
-                    <div class="oil__btn">
-                        <p class="oil__btn__text">Подробнее</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="products__wrapper">
-            <div class="products">
-                <h2 class="products__title">Умная <span>АЗС НЕФТЕКОР</span></h2>
-                <p class="products__description">
-                    Мы предоставляем АЗС с комплектом разрешительной документации.<br>
-                    У нас есть решение для любого объема потребления
-                </p>
 
-                <div class="products__box">
-                    <div class="products__card">
-                        <img src="./Img/fuel2.png" alt="" class="products__img">
-                        <h3 class="products__card__title">Мини АЗС на <span>4500 литров</span></h3>
-                        <p class="products__card__text">Оптимально для потребления от 10 до 15 тысяч литров в месяц</p>
-                    </div>
-
-                    <div class="products__card">
-                        <img src="./Img/fuel3.png" alt="" class="products__img">
-                        <h3 class="products__card__title">Мини АЗС на <span>10 000 литров</span></h3>
-                        <p class="products__card__text">Оптимально для потребления от 15 до 35 тысяч литров в месяц</p>
-                    </div>
-
-                    <div class="products__card">
-                        <img src="./Img/fuel4.png" alt="" class="products__img">
-                        <h3 class="products__card__title">Мини АЗС на <span>20 000 литров</span></h3>
-                        <p class="products__card__text">Оптимально для потребления от 35 тысяч литров в месяц</p>
-                    </div>
-                </div>
-
-                <button class="products__main__btn">Заказать Мини АЗС</button>
-            </div>
-        </section>
 
 
         <section class="create__wrapper">
@@ -190,6 +169,15 @@
 
                     <img src="./Img/logos.png" alt="" class="create__img">
                 </div>
+            </div>
+        </section>
+        <section class="products__wrapper">
+            <div class="products">
+                <h2 class="products__title">География <span> поставок </span> Дизельного топлива </h2>
+                <iframe class="map1"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577348.4545331053!2d36.725877433240996!3d55.5799531024627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2s!4v1761234250598!5m2!1sru!2s"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
         <section class="sertificate__wrapper">
@@ -253,8 +241,6 @@
                 </div>
             </div>
         </section>
-
-
         <section class="news">
             <div class="news__container">
                 <h2 class="news__title">
@@ -304,8 +290,6 @@
                 </div>
             </div>
         </section>
-
-
         <section class="contacts">
             <div class="contacts__container">
                 <h2 class="contacts__title">Свяжитесь <span>с нами!</span></h2>
@@ -321,7 +305,6 @@
                 </p>
             </div>
         </section>
-
         <section class="team">
             <div class="team__container">
                 <h2 class="team__title">Наша <span>команда</span></h2>
@@ -355,7 +338,6 @@
                 </div>
             </div>
         </section>
-
         <section class="map__wrapper">
 
             <iframe class="map1"
@@ -364,7 +346,6 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
-
     <footer class="footer">
         <div class="footer__header">
             <div class="footer__header__left">
@@ -433,7 +414,6 @@
             </div>
         </div>
     </footer>
-
 
 </body>
 

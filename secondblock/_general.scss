@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: grabbing;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+::selection {
+  background: #ffcc00;
+  color: #000;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+.wrapper {
+  width: 100%;
+}
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

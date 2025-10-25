@@ -1,0 +1,24 @@
+@mixin font__family($family) {
+  font-family: $family;
+}
+@mixin color($color) {
+  color: $color;
+}
+
+@mixin metacolors($colors, $background-color) {
+  color: $colors;
+  background-color: $background-color;
+}
+
+@mixin duocolor($duo) {
+  color: $duo;
+}
+
+@mixin nav($bg_color) {
+  background-color: $bg_color;
+}
+
+@mixin borders($border){
+  border: $border;
+}
+

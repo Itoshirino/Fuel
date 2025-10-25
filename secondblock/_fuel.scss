@@ -1,0 +1,149 @@
+.fuel__wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.fuel {
+  width: 100%;
+  margin: auto;
+
+  &__card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+    border: 2px dashed grey;
+    background: #ffffff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #fffdf5;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transform: translateY(-4px);
+    }
+  }
+
+  &__img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #000000;
+  }
+
+  &__subtitle {
+    width: 580px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #5b5b5b;
+  }
+
+  &__btn {
+    align-self: center;
+    width: 90%;
+    max-width: 260px;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 16px;
+    color: #dba833;
+    background: #fff;
+    border: 2px solid #dba833;
+    border-radius: 6px;
+    padding: 10px 28px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #dba833;
+      color: #242424;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(219, 168, 51, 0.3);
+    }
+
+    &:active {
+      background: #b88729;
+      color: #fff;
+      transform: translateY(1px);
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__card {
+      gap: 20px;
+      padding: 25px;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__img {
+      width: 180px;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__subtitle {
+      width: 100%;
+      font-size: 18px;
+    }
+
+    &__btn {
+      font-size: 15px;
+      padding: 10px 24px;
+      width: 70%;
+    }
+  }
+  @media (max-width: 500px) {
+    &__card {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      padding: 20px;
+      gap: 15px;
+    }
+
+    &__img {
+      width: 150px;
+    }
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__subtitle {
+      width: 100%;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    &__btn {
+      font-size: 14px;
+      padding: 8px 20px;
+      width: 100%;
+      max-width: 230px;
+    }
+  }
+}
